@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FishBot - Главная</title>
+  <link href="logo.webp" rel="icon">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <script src="tailwind-3.4.16.js"></script>
+</head>
+<style>::selection { background-color: #2a66ff57; color: #ffffff; } * { scrollbar-width: none; -ms-overflow-style: none; } ::-webkit-scrollbar { width: 0px; height: 0px; } .section-1 { background-image: linear-gradient(rgba(18, 18, 18, 0.7), rgba(18, 18, 18, 0.7)), url('section-1.png'); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed; padding: 0; margin: 0; }</style>
+<body class="min-h-screen">
+  <header class="fixed top-0 left-0 right-0 z-50 bg-black/70 backdrop-blur-md border-b border-white/20">
+    <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-[70px]">
+        <div class="flex items-center ml-2">
+          <div class="flex-shrink-0">
+            <a href="/" class="w-10 h-10 rounded-lg flex items-center justify-center shadow-lg transition-all duration-500 ease-in-out  hover:scale-[98%]">
+              <img src="logo.webp" />
+            </a>
+          </div>
+        </div>
+        <div class="hidden md:flex items-center ml-12 flex-1">
+          <nav class="flex space-x-6">
+            <a href="/" class="duration-[300ms] flex gap-3 text-white items-center hover:scale-[98%] hover:opacity-90 cursor-pointer smooth"><i class='bx bx-home text-base'></i><p class="text-base font-sans font-medium">Главная</p></a>
+            <a href="https://discord.gg/fRfeypzkKQ" class="duration-[300ms] flex gap-3 text-neutral-50/80 hover:text-white items-center hover:scale-[98%] hover:opacity-90 cursor-pointer smooth"><i class='bx bx-support text-base'></i><p class="text-base font-sans font-medium">Поддержка</p></a>
+          </nav>
+        </div>
+        <div class="mr-2">
+          <a href="https://discord.com/oauth2/authorize?client_id=1358362814485495872&permissions=8&integration_type=0&scope=bot" class="px-3 py-2 text-xs font-medium rounded-full bg-[#0b3dbc] hover:bg-[#0051ff] text-white border-none cursor-pointer transition-all duration-500 ease-in-out flex items-center justify-center gap-1 w-fit mt-0 no-underline hover:scale-[98%]"><i class='bx bx-bot text-base'></i> ДОБАВИТЬ БОТА</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="section-1 h-screen flex flex-col md:flex-row items-center justify-center text-white px-6 md:px-20">
+    <div class="mb-6 md:mb-0 md:mr-16 flex-shrink-0 flex justify-center md:justify-start w-full md:w-auto">
+      <img src="logo.webp" class="w-32 h-32 md:w-40 md:h-40 object-contain">
+    </div>
+    <div class="text-center md:text-left max-w-xl">
+      <h1 class="text-3xl md:text-5xl font-bold mb-4">Привет, я FishBot</h1>
+      <p class="text-base md:text-lg leading-relaxed text-white/90 mb-6">FishBot — надёжный помощник для вашего сообщества,<br>модерация, система отпусков, система уровней,<br>и прочих полезных функций для вашего сообщества!</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+        <a href="https://discord.com/oauth2/authorize?client_id=1358362814485495872&permissions=8&integration_type=0&scope=bot" class="w-fit mx-auto sm:mx-0 px-5 py-3 text-sm font-medium rounded-full bg-[#0b3dbc] hover:bg-[#0051ff] text-white transition-all duration-500 ease-in-out flex items-center gap-2  hover:scale-[98%]"><i class='bx bx-bot text-lg'></i> ДОБАВИТЬ БОТА</a>
+      </div>
+    </div>
+  </section>
+  <footer class="bg-black text-white pt-10 pb-6 px-6 md:px-20 border-t border-white/20">
+    <div class="flex flex-col md:flex-row justify-between items-start gap-12">
+      <div class="flex items-start gap-4">
+        <img src="logo.webp" class="w-12 h-12 object-contain mt-1">
+        <div>
+          <h2 class="text-xl font-semibold mb-1">FishBot</h2>
+          <p class="text-sm text-white/70 leading-snug">FishBot — Все права защищены © <span id="currentYear"></span></p>
+        </div>
+      </div>
+      <div class="flex flex-col sm:flex-row gap-10">
+        <div>
+          <h3 class="text-base font-semibold mb-2">Наши сообщества</h3>
+          <ul class="space-y-1 text-sm text-white/80">
+            <li><a href="https://discord.gg/n5CUCNX9Th" class="transition-all duration-500 ease-in-out hover:text-[#0091ff]">Discord сервер</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-base font-semibold mb-2">Документы</h3>
+          <ul class="space-y-1 text-sm text-white/80">
+            <li><a href="/terms-of-service" class="transition-all duration-500 ease-in-out hover:text-[#0091ff]">Условия обслуживания</a></li>
+            <li><a href="/privacy-policy" class="transition-all duration-500 ease-in-out hover:text-[#0091ff]">Политика конфиденциальности</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="mt-10 mb-4 w-4/5 mx-auto border-t border-white/15"></div>
+    <div class="text-center text-sm">
+      <a href="https://undex.dev" target="_blank" class="text-white transition-all duration-500 ease-in-out hover:text-[#0091ff]">Сайт разработал: Undex</a>
+    </div>
+  </footer>
+</body>
+</html>
+<script>document.getElementById("currentYear").textContent = new Date().getFullYear();</script>
